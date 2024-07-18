@@ -1,0 +1,11 @@
+Objetivo: Verificar se uma string contendo parênteses está balanceada. Isso significa que, para cada parêntese de abertura '(', há um parêntese correspondente de fechamento ')'.
+
+1 - Contagem de Parênteses de Abertura:
+    O algoritmo começa contando o número de parênteses de abertura '(' dentro da frase.
+2 - Contagem de Parênteses de Fechamento:
+    O algoritmo conta o número de parênteses de fechamento ')' na mesma frase.
+3 - Verificação de Balanceamento:
+    Com base nas contagens anteriores, verifica se o número de parênteses de abertura é igual ao número de parênteses de fechamento.
+4 - Resultado:
+    Se as contagens forem iguais, signfica que estão balanceados e o algoritmo retorna o numero 1.
+    Caso as contagens forem diferentes, os parênteses não estão balanceados e o algoritmo retorna o numero 0.

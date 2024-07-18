@@ -1,0 +1,26 @@
+Glossário
+Matriz : É uma tabela organizada em linhas e colunas no formato m x n, onde m representa o número de linhas (horizontal) e n o número de colunas (vertical).
+O número 1 na tabela é a representação geometrica de um retângulo.
+
+Descrição do Algoritmo
+
+Objetivo: Encontrar o maior retângulo possível em uma matriz, onde alguns valores são 1 e outros são 0.
+
+1 - Começo:
+    O algoritmo inicia na primeira posição da matriz.
+2 - Verificação
+    Caso a posição atual for um número 1 o algoritmo continua, se não ele segue para a próxima casa da matriz.
+3 - Extensão Horizontal:
+    A partir da posição atual, descobrimos a largura maxima dessa linha, ou seja, a maior sequência contínua de números 1 para a direita.
+4 - Extensão Vertical:
+    Depois de saber sua largura maxima, a area do retângulo formado pela sequencia é armazenada e o algoritmo se expande para a linha abaixo.
+5 - Ajuste da Largura:
+    Ao passar para a linha abaixo, a largura do retângulo é ajustada, esta é feita usando o menor valor entre a largura máxima da linha acima e a largura máxima da linha atual.
+6 - Crescimento Continuo
+    O algoritmo continua a se expandir verticamente, em cada expansão a area do retângulo formado é armazenada.
+7 - Finalizaçao do Crescimento
+    Quando não há mais linhas para baixo ou quando a largura maxima se torna 0, esse ciclo de crescimento para.
+8 - Ciclo
+    O algoritmo então avança para a proxima posição da matriz e inicia o passo 2 novamente. Este ciclo continua última posição da matriz.
+9 - Resultado
+    O algoritmo verifica as áreas dos retângulos que estão armazenadas e apresenta o retângulo de maior área.
